@@ -7,6 +7,7 @@ import (
 	"io"
 	"net/http"
 	"strconv"
+	"strings"
 	"time"
 
 	log "github.com/sirupsen/logrus"
@@ -178,14 +179,24 @@ func (c *Client) NewRequest(method, endpoint string, body io.Reader) (*http.Requ
 			"endpoint": endpoint,
 		},
 	)
-	request, err := http.NewRequest(method, fmt.Sprintf(apiURLFormat, scheme, c.Region, baseURL, endpoint), body)
+
+	request, err := http.NewRequest(method, fmt.Sprintf(apiURLFormat, scheme, c.getRoutePrefix(endpoint), baseURL, endpoint), body)
 	if err != nil {
 		logger.Debug(err)
 		return nil, err
 	}
+
 	request.Header.Add(apiTokenHeaderKey, c.APIKey)
 	request.Header.Add("Accept", "application/json")
 	return request, nil
+}
+
+func (c *Client) getRoutePrefix(endpoint string) interface{} {
+	if strings.Contains(endpoint, "tournament") {
+		return api.RegionToRoute[c.Region]
+	} else {
+		return c.Region
+	}
 }
 
 // Logger returns a logger with client specific fields set.
