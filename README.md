@@ -1,7 +1,7 @@
-[![Documentation](https://godoc.org/github.com/KnutZuidema/golio?status.svg)](https://godoc.org/github.com/KnutZuidema/golio)
-[![CI](https://github.com/KnutZuidema/golio/actions/workflows/ci.yml/badge.svg)](https://github.com/KnutZuidema/golio/actions/workflows/ci.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/KnutZuidema/golio)](https://goreportcard.com/report/github.com/KnutZuidema/golio)
-[![codecov](https://codecov.io/gh/KnutZuidema/golio/branch/master/graph/badge.svg)](https://codecov.io/gh/KnutZuidema/golio)
+[![Documentation](https://godoc.org/github.com/autotourney/golio?status.svg)](https://godoc.org/github.com/autotourney/golio)
+[![CI](https://github.com/autotourney/golio/actions/workflows/ci.yml/badge.svg)](https://github.com/autotourney/golio/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/autotourney/golio)](https://goreportcard.com/report/github.com/autotourney/golio)
+[![codecov](https://codecov.io/gh/autotourney/golio/branch/master/graph/badge.svg)](https://codecov.io/gh/autotourney/golio)
 
 # Golio
 
@@ -17,9 +17,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/KnutZuidema/golio"
-	"github.com/KnutZuidema/golio/api"
-	"github.com/KnutZuidema/golio/riot/lol"
+	"github.com/autotourney/golio"
+	"github.com/autotourney/golio/api"
+	"github.com/autotourney/golio/riot/lol"
 	"github.com/sirupsen/logrus"
 )
 

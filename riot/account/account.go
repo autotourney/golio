@@ -3,7 +3,7 @@ package account
 import (
 	"fmt"
 
-	"github.com/KnutZuidema/golio/api"
+	"github.com/autotourney/golio/api"
 
 	log "github.com/sirupsen/logrus"
 )

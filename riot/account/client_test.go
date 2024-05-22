@@ -5,9 +5,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/KnutZuidema/golio/api"
-	"github.com/KnutZuidema/golio/internal"
-	"github.com/KnutZuidema/golio/internal/mock"
+	"github.com/autotourney/golio/api"
+	"github.com/autotourney/golio/internal"
+	"github.com/autotourney/golio/internal/mock"
 )
 
 func TestNewClient(t *testing.T) {

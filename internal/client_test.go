@@ -9,8 +9,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/KnutZuidema/golio/api"
-	"github.com/KnutZuidema/golio/internal/mock"
+	"github.com/autotourney/golio/api"
+	"github.com/autotourney/golio/internal/mock"
 )
 
 func TestClient_DoRequest(t *testing.T) {
